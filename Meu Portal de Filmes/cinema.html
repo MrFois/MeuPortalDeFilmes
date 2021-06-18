@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="cinema.css" />
+    <title>Filmes</title>
+  </head>
+  <body onload="carregaFilmesImg()">
+    <header class="container header">
+      <div class="row">
+        <div class="col-12 header_area">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-1">
+              <img src="imagens/tex_logo.png" class="logo" />
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-11 menu">
+              <nav class="nav">
+                <a class="nav-link" href="pesquisa.html">lançamentos</a>
+                <a class="nav-link" href="pesquisa.html">em destaque</a>
+                <a class="nav-link" href="pesquisa.html">avaliações</a>
+                <a class="nav-link" href="pesquisa.html"
+                  >entrevistas & makingof</a
+                >
+                <a class="nav-link" href="pesquisa.html">novidades</a>
+                <a class="nav-search" href="pesquisa.html">search</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main">
+      <div class="col-12">
+        <section class="row lancamentos">
+          <div class="col-12 lancamentos_header">
+            <h1>Lançamentos</h1>
+          </div>
+          <div class="col-12 lancamento_carroulsel">
+            <div class="row">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="col-12 carousel_body">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                          <iframe
+                            class="filme"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/ge_KJc0Ghsk"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                          <h2>Harry Potter e o Prisioneiro de Azkaban</h2>
+                          <p>
+                            <strong>Sinopse:</strong> O terceiro ano de Harry
+                            Potter em Hogwarts começa mal quando ele descobre
+                            que o assassino Sirius Black escapou da prisão de
+                            Azkaban e está empenhado em matá-lo. Enquanto o gato
+                            de Hermione atormenta o rato doente de Ron,
+                            dementadores são enviados para proteger a escola de
+                            Sirius Black. Um professor misterioso ajuda Harry a
+                            aprender a se defender.
+                          </p>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-4">
+                                <p><strong>Diretor: </strong>Alfonso Cuarón</p>
+                              </div>
+                              <div class="col-4">
+                                <p><strong>Roteiro: </strong>Steven Kloves</p>
+                              </div>
+                              <div class="col-4">
+                                <p><strong>Estreia:</strong> 2004</p>
+                              </div>
+                            </div>
+                          </div>
+                          <strong>Elenco:</strong>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-3">
+                                <p>Daniel Radcliffe</p>
+                              </div>
+                              <div class="col-3">
+                                <p>Emma Watson</p>
+                              </div>
+                              <div class="col-3">
+                                <p>Rupert Grint</p>
+                              </div>
+                              <div class="col-3">
+                                <p>Gary Oldman</p>
+                              </div>
+                            </div>
+                          </div>
+                          <strong>avaliações:</strong>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-12 carousel_body">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                          <iframe
+                            class="filme"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/g6ng8iy-l0U"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                          <h2>Vingadores Ultimato</h2>
+                          <p>
+                            <strong>Sinopse:</strong> Após Thanos eliminar
+                            metade das criaturas vivas, os Vingadores têm de
+                            lidar com a perda de amigos e entes queridos. Com
+                            Tony Stark vagando perdido no espaço sem água e
+                            comida, Steve Rogers e Natasha Romanov lideram a
+                            resistência contra o titã louco.
+                          </p>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-4">
+                                <p>
+                                  <strong>Diretor: </strong>Joe Russo e Anthony
+                                  Russo
+                                </p>
+                              </div>
+                              <div class="col-4">
+                                <p>
+                                  <strong>Roteiro: </strong>Christopher Markus e
+                                  Stephen McFeely
+                                </p>
+                              </div>
+                              <div class="col-4">
+                                <p><strong>Estreia:</strong>2019</p>
+                              </div>
+                            </div>
+                          </div>
+                          <strong>Elenco:</strong>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-3">
+                                <p>Robert Downey Jr.</p>
+                              </div>
+                              <div class="col-3">
+                                <p>Chris Evans</p>
+                              </div>
+                              <div class="col-3">
+                                <p>Tom Holland</p>
+                              </div>
+                              <div class="col-3">
+                                <p>scarlett johansson</p>
+                              </div>
+                            </div>
+                          </div>
+                          <strong>avaliações:</strong>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-12 carousel_body">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                          <iframe
+                            class="filme"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/4FN41HIO9D4"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                          <h2>Uma Saída de Mestre</h2>
+                          <p>
+                            <strong>Sinopse:</strong> Charlie Croker é um gênio
+                            do crime e está decidido a recuperar um cofre
+                            repleto de ouro que fora roubado por seu ex-sócio
+                            que o traiu. Para isso, Croker conta com uma gangue
+                            formada pelo gênio da computação Steve, pelo piloto
+                            Handsome Rob, pelo especialista em explosivos Left
+                            Ear, pelo arrombador de cofres John Bridger e pela
+                            bela Stella Bridger. Extravagante, o plano de mestre
+                            deles é recuperar o cofre em plena Los Angeles,
+                            criando o maior engarrafamento que a cidade já viu
+                            em sua história.
+                          </p>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-4">
+                                <p><strong>Diretor:</strong>F. Gary Gray</p>
+                              </div>
+                              <div class="col-4">
+                                <p>
+                                  <strong>Roteiro:</strong>wayne powers, Donna
+                                  Powers e Troy Kennedy Martin
+                                </p>
+                              </div>
+                              <div class="col-4">
+                                <p><strong>Estreia:</strong>2003</p>
+                              </div>
+                            </div>
+                          </div>
+                          <strong>Elenco:</strong>
+                          <div class="col-12">
+                            <div class="row">
+                              <div class="col-3">
+                                <p>Charlize Theron</p>
+                              </div>
+                              <div class="col-3">
+                                <p>Mark Wahlberg</p>
+                              </div>
+                              <div class="col-3">
+                                <p>Jason Statham</p>
+                              </div>
+                              <div class="col-3">
+                                <p>Edward Norton</p>
+                              </div>
+                            </div>
+                          </div>
+                          <strong>avaliações:</strong>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="row destaque">
+          <div class="col-12">
+            <div class="row destaque_header">
+              <div class="col-6">
+                <h1>Em destaque</h1>
+              </div>
+              <div class="col-6">
+                <div class="dropdown show">
+                  <a
+                    class="btn btn-teste dropdown-toggle"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Categorias
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Aventira</a>
+                    <a class="dropdown-item" href="#">Fantasia</a>
+                    <a class="dropdown-item" href="#">Ficção científica </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="row">
+          <div class="col-12">
+            <div class="row" id="tela1">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <img class="destaque-img" src="#" />
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <img class="destaque-img" src="#" />
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <img class="destaque-img" src="#" />
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <img class="destaque-img" src="#" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 btn-margin">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="carregaFilmesImg2()"
+            >
+              Carregar mais filmes
+            </button>
+          </div>
+        </section>
+
+        <section class="row avaliacoes">
+          <div class="col-12 ava-container">
+            <h1>Últimas avaliações</h1>
+            <div class="row ava-cards">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-4 card-aval">
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-md-3 col-lg-4">
+                    <img class="avaliadores" src="imagens/iconfinder1.svg" />
+                  </div>
+                  <div class="col-8 col-sm-8 col-md-9 col-lg-8 ava-body">
+                    <h5>José Maria</h5>
+                    <p>
+                      <span>Avaliação: </span>O Terceiro filme da saga Potter e
+                      Maravilhoso, cheio de efeitos magníficos. Alfonso Cuarón
+                      trouce para o publico uma versão mais sombria e tensa. O
+                      Filme e maravilhoso em todos os aspectos.
+                    </p>
+                    <div class="ava-rate">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <strong>25/04/2021</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-4 card-aval">
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-md-3 col-lg-4">
+                    <img class="avaliadores" src="imagens/iconfinder2.svg" />
+                  </div>
+                  <div class="col-8 col-sm-8 col-md-9 col-lg-8 ava-body">
+                    <h5>Maria José</h5>
+                    <p>
+                      <span>Avaliação: </span>A espera de 10 anos valeu sim à
+                      pena. Filme fez jus a um encerramento de uma saga. Marvel
+                      nos deu tudo que queríamos. A batalha final é arrepiante,
+                      te leva no ápice de todas as emoções. Agora só nos resta
+                      aguardar pra ver com o que a Marvel nos fazerá sonhar
+                      daqui pra frente. Obrigado Marvel por essa experiência
+                      nessa década!
+                    </p>
+                    <div class="ava-rate">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <strong>25/04/2021</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-4 card-aval">
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-md-3 col-lg-4">
+                    <img class="avaliadores" src="imagens/iconfinder3.svg" />
+                  </div>
+                  <div class="col-8 col-sm-8 col-md-9 col-lg-8 ava-body">
+                    <h5>Chiquinho</h5>
+                    <p>
+                      <span>Avaliação: </span>Um filme de roubo, com ação,
+                      suspense, drama, um pouco de comédia em alguns momentos,
+                      posso dizer que um filme com elenco TOP, e enredo ótimo,
+                      um filme bem completo. Muito bom.
+                    </p>
+                    <div class="ava-rate">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <strong>25/04/2021</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="row entrevista">
+          <div class="col-12">
+            <h1>Entrevista & Making of</h1>
+          </div>
+          <div class="col-12">
+            <div class="row entrevista-card-container">
+              <div class="col-12 col-sm-12 col-md4 col-lg-4">
+                <div class="card" style="width: 18rem">
+                  <iframe
+                    class="filme"
+                    width="auto"
+                    height="300px"
+                    src="https://www.youtube.com/embed/PnBZgxMd6wI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Entrevista elenco Vingadores</h5>
+                    <p class="card-text">
+                      Elenco de vingadores Ultimato revelam bastidores dos
+                      filmes de sucesso da Marvel
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md4 col-lg-4">
+                <div class="card" style="width: 18rem">
+                  <iframe
+                    class="filme"
+                    width="auto"
+                    height="300px"
+                    src="https://www.youtube.com/embed/4Yvk9Fa1mSA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Entrevista Daniel Radcliffe</h5>
+                    <p class="card-text">
+                      O garoto que sobreviveu, Daniel Radcliffe em entrevista
+                      sobre o Harry Potter
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md4 col-lg-4">
+                <div class="card" style="width: 18rem">
+                  <iframe
+                    class="filme"
+                    width="auto"
+                    height="300px"
+                    src="https://www.youtube.com/embed/C0ZjtqeKLoU"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <div class="card-body">
+                    <h5 class="card-title">Entrevista elenco de Star Wars</h5>
+                    <p class="card-text">
+                      Entrevista feita por brasileiros aos atores de Star Wars
+                      que fazem sucesso entre gerações
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="row novidades_sobre">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <h1>Novidades</h1>
+            <div class="row card_novidades">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                <img src="imagens/oscar.jpeg" class="materia" />
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-7 card-content">
+                <strong>Oscar 2021</strong>
+                <p>
+                  "Nomadland" foi o grande vencedor do Oscar 2021 neste domingo
+                  (25), com três prêmios. Drama americano sobre nômades da
+                  terceira idade sem emprego ou aposentadoria, venceu o
+                  principal prêmio da noite: Melhor filme.
+                </p>
+                <div class="card-topicos">
+                  <span>hollywood</span>
+                  <span>oscar</span>
+                  <span>melhores filmes</span>
+                </div>
+              </div>
+            </div>
+            <div class="row card_novidades">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                <img src="imagens/avatar2.jpeg" class="materia" />
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-7 card-content">
+                <strong>Avatar 2 é finalizado</strong>
+                <p>
+                  A espera pelas sequências de Avatar (2009) finalmente está
+                  perto do fim. Após anos de atraso — e uma pandemia no meio do
+                  caminho —, James Cameron finalizou as gravações de Avatar 2, e
+                  o terceiro filme da série está encaminhado, com 95% das
+                  filmagens concluídas.
+                </p>
+                <div class="card-topicos">
+                  <span>hollywood</span>
+                  <span>oscar</span>
+                  <span>melhores filmes</span>
+                </div>
+              </div>
+            </div>
+            <div class="row card_novidades">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                <img src="imagens/narcisa.jpeg" class="materia" />
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-7 card-content">
+                <strong>Morre Helen McCrory</strong>
+                <p>
+                  Aos 52 anos de idade, morre Helen McCrory, atriz que
+                  interpretou Narcisa Malfoy, mãe de Draco Malfoy nos filems de
+                  Harry Potter, vítima de um câncer. Seu falecimento foi
+                  informado por seu Marido
+                </p>
+                <div class="card-topicos">
+                  <span>hollywood</span>
+                  <span>oscar</span>
+                  <span>melhores filmes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="row sobre">
+              <div class="col-12">
+                <h1>Sobre</h1>
+                <p>
+                  Este é um site desenvolvido pelo aluno Pedro Fois Fernandes da
+                  PUC Minas para a diciplina de desenvolvimento de interfaces
+                  WEB. Com o intuito de ser um portal de filmes responsivo, ou
+                  seja, se adapta aos diversos tamanhos de telas de devices via
+                  bootstrap. Data: 26/04/2021!
+                </p>
+                <h1>Editorial</h1>
+                <div class="editorial-container">
+                  <img src="imagens/icone.png" class="icone" />
+                  <strong>Redação: </strong>
+                  <span>João da Silva</span>
+                </div>
+                <div class="editorial-container">
+                  <img src="imagens/icone.png" class="icone" />
+                  <strong>Pesquisa: </strong>
+                  <span>Maria da Silva</span>
+                </div>
+                <div class="editorial-container">
+                  <img src="imagens/icone.png"class="icone"">
+                  <strong>Gerente Geral: </strong>
+                  <span>José</span>
+                </div>
+                <div class="redes-sociais">
+                  <strong>Redes sociais</strong>
+                  <div class="social-icons">
+                    <img src="imagens/facebook.png" class="facebook" />
+                    <img src="imagens/twitter.png" class="twitter" />
+                    <img src="imagens/instagram.png" class="instagram" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="container footer">
+      <div class="row">
+        <div class="col-12 footer_area">
+          <div class="row">
+            <div class="col-11 texto_rodape">
+              Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web -
+              ICEI PUC Minas, Aluno: Pedro Fois Fernandes
+            </div>
+            <div class="col-12 col-sm-12 col-md-1 col-lg-1">
+              <img src="imagens/tex_logo.png" class="logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

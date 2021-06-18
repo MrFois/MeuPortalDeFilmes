@@ -1,0 +1,134 @@
+.header_area {
+  padding: 1.25rem;
+  background-color: rgba(211, 211, 211, 0.596);
+}
+.menu {
+  padding-top: 1rem;
+  justify-content: center;
+}
+.nav {
+  justify-content: center;
+  color: black;
+}
+.nav-search {
+  text-align: center;
+  color: black;
+  padding-left: 7rem;
+  padding-top: 0.5rem;
+}
+
+.nav-link {
+  text-align: center;
+  padding-right: 0.5rem;
+  border-width: 0.1rem;
+  border-right: solid black;
+  color: black;
+}
+.logo {
+  width: 5rem;
+}
+.lancamentos_header {
+  text-align: center;
+}
+
+.footer {
+  font-size: 1rem;
+  padding: 1.25rem;
+  background-color: rgba(211, 211, 211, 0.596);
+}
+.texto_rodape {
+  text-align: center;
+  padding-top: 1.25rem;
+}
+.entrevista {
+  background-color: rgba(121, 113, 113, 0.247);
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* border: solid red 1px; */
+}
+.card-content strong {
+  font-size: 1.7rem;
+  color: rgb(16, 16, 83);
+}
+.card-topicos {
+  margin-bottom: 0.25rem;
+}
+
+.card-topicos span {
+  border: solid grey 1px;
+  border-radius: 1rem;
+  color: white;
+  background-color: grey;
+  padding: 0.25rem 1rem;
+  text-align: center;
+  margin-right: 0.25rem;
+  font-weight: 600;
+}
+.checked {
+  color: orange;
+}
+.lancamento_carroulsel {
+  background-color: rgba(39, 3, 82, 0.295);
+  padding-top: 1rem;
+}
+.icone {
+  width: 1.25rem;
+}
+.facebook {
+  width: 1.25rem;
+}
+.instagram {
+  width: 1.25rem;
+}
+.twitter {
+  width: 1.25rem;
+}
+.materia {
+  padding: 5px;
+  width: 10rem;
+}
+.filme {
+  width: 100%;
+  max-width: auto;
+  max-height: 18.75rem;
+}
+.entrevista-card-container {
+  padding: 1rem 5rem 6rem 6rem;
+}
+.destaque-img {
+  width: 100%;
+  height: 100%;
+  max-height: 26.25rem;
+  max-width: 15rem;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.btn-margin {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+.avaliadores {
+  width: 100%;
+  height: 100%;
+  max-height: 5rem;
+  max-width: 5rem;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; /* 1rem === 15px /
+    }
+  }
+  
+  @media (max-width: 720px) {
+    html {
+      font-size: 87.5%; / 1rem === 14px */
+  }
+}

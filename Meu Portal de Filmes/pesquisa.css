@@ -1,0 +1,16 @@
+.logo {
+  width: 5rem;
+  text-align: center;
+}
+.pesquisar {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.nav {
+  justify-content: center;
+  color: black;
+}
+.nav-link {
+  color: black;
+  padding-top: 2rem;
+}
